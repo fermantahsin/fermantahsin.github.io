@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 :root {
-  --main-green: #7ba67b;
-  --light-green: #e7f2e7;
-  --dark-green: #4f704f;
-  --text-color: #333;
+  --main-color: #568EA3;
+  --light-shade: #D5AC4E;
+  --background: #FFFFFF;
+  --text-color: #826251;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background-color: var(--light-green);
+  background-color: var(--light-shade);
   color: var(--text-color);
   line-height: 1.6;
 }
 
 header {
-  background-color: var(--main-green);
-  color: white;
+  background-color: var(--main-color);
+  color: var(--background);
   text-align: center;
   padding: 1.5rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(130, 98, 81, 0.1);
 }
 
 header h1 {
@@ -33,18 +33,19 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--background);
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
-  transition: opacity 0.3s;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  opacity: 0.8;
+  color: var(--light-shade);
 }
 
 nav a.active {
+  color: var(--light-shade);
   text-decoration: underline;
 }
 
@@ -55,18 +56,17 @@ nav a.active {
 }
 
 h2 {
-  color: var(--dark-green);
+  color: var(--main-color);
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: var(--main-green);
-  color: white;
+  background-color: var(--main-color);
+  color: var(--background);
   margin-top: 2rem;
 }
 
-/* Ürün kataloğu */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -74,25 +74,24 @@ footer {
   margin-top: 1.5rem;
 }
 
-/* Single consolidated .product rule */
 .product {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: var(--background);
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(130, 98, 81, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
   min-height: 200px;
 }
 
 .product:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(130, 98, 81, 0.2);
 }
 
 .product h3 {
-  color: var(--dark-green);
+  color: var(--main-color);
   margin-top: 0;
   font-size: 1.1rem;
 }
@@ -100,6 +99,7 @@ footer {
 .product p {
   margin: 8px 0;
   font-size: 0.9rem;
+  color: var(--text-color);
 }
 
 .prices {
@@ -110,20 +110,32 @@ footer {
 }
 
 .price {
-  background: #f6f6f6;
-  padding: 6px 10px;
+  background: var(--light-shade);
+  padding: 8px 12px;
   border-radius: 6px;
   font-size: 0.9rem;
-  color: #222;
-  border: 1px solid #eee;
+  color: var(--text-color);
+  border: 1px solid rgba(130, 98, 81, 0.1);
 }
 
 .price.small {
-  background: #fffbe6;
+  background: var(--main-color);
+  color: var(--background);
 }
 
 .price.large {
-  background: #e8f7ff;
+  background: var(--main-color);
+  color: var(--background);
+  border: 1px solid var(--main-color);
+}
+
+.about {
+  color: #ffffff;
+}
+
+.about p {
+  color: #ffffff;
+  margin: 0 0 0.75rem;
 }
 
 @media (max-width: 600px) {
