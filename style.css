@@ -61,9 +61,10 @@ h2 {
 
 .catalog h2 {
   color: #FFFFFF;
-  margin-bottom: 1rem;
-  font-size: 0.7rem; /* burayı değiştirerek daha küçük/büyük yapabilirsiniz */
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
   line-height: 1.3;
+  text-align: center; /* burası metni ortalar */
 }
 
 footer {
