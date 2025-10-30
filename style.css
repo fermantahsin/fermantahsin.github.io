@@ -59,6 +59,11 @@ h2 {
   color: var(--main-color);
 }
 
+.catalog h2 {
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
