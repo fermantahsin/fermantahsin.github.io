@@ -75,11 +75,13 @@ footer {
 }
 
 .product {
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  min-height: 180px; /* ihtiyaç halinde ayarla */
 }
 
 .product:hover {
@@ -90,4 +92,33 @@ footer {
 .product h3 {
   color: var(--dark-green);
   margin-top: 0;
+}
+
+.product p {
+  margin: 8px 0 12px;
+  flex: 0 0 auto;
+}
+
+.prices {
+  margin-top: auto; /* fiyatları kutu altına it */
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.price {
+  background: #f6f6f6;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #222;
+  border: 1px solid #eee;
+}
+
+.price.small { background: #fffbe6; }
+.price.large { background: #e8f7ff; }
+
+/* responsive için gerekirse ürün grid ve kutu yüksekliğini ayarla */
+@media (max-width: 600px) {
+  .product { min-height: auto; }
 }
