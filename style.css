@@ -146,3 +146,26 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Open HTML in Chrome",
+      "file": "${workspaceFolder}/${input:htmlFile}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "htmlFile",
+      "type": "pickString",
+      "description": "Select the HTML file to open in the browser",
+      "options": [
+        "index.html",
+        "urunler.html"
+      ]
+    }
+  ]
+}
