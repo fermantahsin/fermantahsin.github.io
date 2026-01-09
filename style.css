@@ -22,9 +22,6 @@ body {
     display: grid;
     place-items: center;
     background: rgba(255,255,255,0.02);
-    color: #222222; /* koyu renkli yazı */
-    font-size: 1.6rem; /* daha büyük puntolar */
-    font-weight: 800;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .04em;
